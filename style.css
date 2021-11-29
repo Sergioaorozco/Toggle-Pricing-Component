@@ -1,0 +1,61 @@
+:root {
+    --Primary: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    --LightGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayish: hsl(234, 14%, 74%);
+    --GrayishBlue: hsl(233, 13%, 49%);
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+
+}
+
+body {
+    background-color: var(--LightGrayishBlue);
+    background-image: url('images/bg-top.svg') , url('images/bg-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, bottom left;
+    text-align: center;
+}
+
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 30px;
+}
+
+.basic, .master {
+    background: white;
+    padding: 3% 6px;
+    width: 250px;
+    color: var(--DarkGrayishBlue);
+}
+
+.basic {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.master {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.professional {
+    background: var(--Primary);
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    height: 20%;
+    padding: 5% 6px;
+}
+
+.toggle-period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-hr {
+    border:none;
+    border-top: 1px solid var(--DarkGrayishBlue);
+}
