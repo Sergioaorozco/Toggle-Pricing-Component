@@ -25,7 +25,7 @@ body {
 
 .basic, .master {
     background: white;
-    padding: 3% 6px;
+    padding: 3% 10px;
     width: 250px;
     color: var(--DarkGrayishBlue);
 }
@@ -45,8 +45,7 @@ body {
     color: white;
     width: 300px;
     border-radius: 20px;
-    height: 20%;
-    padding: 5% 6px;
+    padding: 5% 10px;
 }
 
 .toggle-period {
@@ -58,4 +57,25 @@ body {
 .basic-hr {
     border:none;
     border-top: 1px solid var(--DarkGrayishBlue);
+}
+
+
+.btn-primary {
+    background: var(--Primary);
+    border-radius: 4px;
+    display: block;
+    padding: 10px 0;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: var(--LightGrayishBlue);
+    border-radius: 4px;
+    display: block;
+    margin-block-start: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+
 }
