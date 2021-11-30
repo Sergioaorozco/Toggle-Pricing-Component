@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Toggle Pricing Component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <h2>Our Pricing</h2>
   <div class="toggle-period">
     <p class="period">Monthly</p>
-    <input class="toggle" id="billing" type="checkbox">
+    <input class="toggle" id="billing" type="checkbox" onclick="ChangeTime()">
     <p class="period">Anually</p>
   </div>
   <section class="price">
@@ -56,15 +65,16 @@
       <P>2 TB Storage</P>
       <hr class="basic-hr">
       <p>10 Users Allowed</p>
-      <hr class="basic-hr">      
+      <hr class="basic-hr">
       <p>Send up to 20 GB</p>
       <a href="#" class="btn-primary">Learn More</a>
     </div>
   </section>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Sergioaorozco">sergioaorozco</a>.
   </div>
 </body>
-<script src="index.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </html>

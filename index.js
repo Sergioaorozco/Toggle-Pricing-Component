@@ -1,12 +1,21 @@
+function ChangeTime() {
+  let togglecurrency = document.getElementById("billing");
+  let month = document.querySelectorAll(".monthly-billing");
+  let year = document.querySelectorAll(".yearly-billing");
 
-function change(billing) {
-    var monthly = document.getElementsByClassName('monthly-billing');
-    var yearly = document.getElementsByClassName('yearly-billing');
-    var togglecheck = document.getElementById('billing');
-
-    if (togglecheck.checked) {
-        monthly.style.display = "none";        
-    } else {
-        yearly.style.display = "none";
+  if (togglecurrency.checked) {
+    for (var i = 0; i < month.length; i++) {
+      month[i].style.display = "none";
     }
-};
+    for (var i = 0; i < year.length; i++) {
+      year[i].style.display = "block";
+    }
+  } else {
+    for (var i = 0; i < year.length; i++) {
+      year[i].style.display = "none";
+    }
+    for (var i = 0; i < month.length; i++) {
+      month[i].style.display = "block";
+    }
+  }
+}

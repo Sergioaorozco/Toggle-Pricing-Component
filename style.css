@@ -1,9 +1,10 @@
 :root {
     --Primary: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
     --LightGrayishBlue: hsl(240, 78%, 98%);
-    --LightGrayish: hsl(234, 14%, 74%);
+    --LightGrayish: hsla(234, 14%, 74%, 0.548);
     --GrayishBlue: hsl(233, 13%, 49%);
     --DarkGrayishBlue: hsl(232, 13%, 33%);
+    --OpacityGrayishBlue: hsla(232, 13%, 33%, 0.411);
     --Primary-font: 'Montserrat', sans-serif;
 
 }
@@ -12,9 +13,11 @@ body {
     background-color: var(--LightGrayishBlue);
     background-image: url('images/bg-top.svg') , url('images/bg-bottom.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: right, bottom left;
+    background-position: top right,bottom left;
     text-align: center;
     font-family: var(--Primary-font);
+    height: 100vh;
+    overflow-y: hidden;
 
 }
 
@@ -32,6 +35,7 @@ body {
     padding: 3% 10px;
     width: 250px;
     color: var(--DarkGrayishBlue);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .basic {
@@ -56,11 +60,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .basic-hr {
     border:none;
-    border-top: 1px solid var(--DarkGrayishBlue);
+    border-top: 1px solid var(--LightGrayish);
+}
+
+.professional .basic-hr {
+    border:none;
+    border-top: 1px solid var(--OpacityGrayishBlue);
 }
 
 
@@ -81,6 +91,7 @@ body {
     margin-block-start: 10px;
     padding: 10px 0;
     text-decoration: none;
+    color: var(--DarkGrayishBlue);
 
 }
 
@@ -97,4 +108,14 @@ body {
     margin-block-end: 20px;
     margin-block-start: 20px;
     display: none;
+}
+
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
