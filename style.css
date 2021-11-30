@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-family: var(--Primary-font);
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 
 }
 
