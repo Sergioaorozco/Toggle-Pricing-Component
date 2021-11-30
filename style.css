@@ -32,7 +32,9 @@ body {
 
 .basic, .master {
     background: white;
-    padding: 3% 10px;
+    padding-block-end: 3%;
+    padding-block-start: 1%;
+    padding-inline: 10px;
     width: 250px;
     color: var(--DarkGrayishBlue);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -53,7 +55,17 @@ body {
     color: white;
     width: 300px;
     border-radius: 20px;
-    padding: 5% 10px;
+    padding-block-end: 3%;
+    padding-block-start: 1%;
+    padding-inline: 10px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.professional-content {
+    width: 100%;
 }
 
 .toggle-period {
@@ -97,14 +109,14 @@ body {
 
 .monthly-billing {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-block-start: 20px;
     margin-block-end: 20px;
 }
 
 .yearly-billing {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-block-end: 20px;
     margin-block-start: 20px;
     display: none;
