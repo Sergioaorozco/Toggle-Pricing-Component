@@ -4,6 +4,7 @@
     --LightGrayish: hsl(234, 14%, 74%);
     --GrayishBlue: hsl(233, 13%, 49%);
     --DarkGrayishBlue: hsl(232, 13%, 33%);
+    --Primary-font: 'Montserrat', sans-serif;
 
 }
 
@@ -13,6 +14,8 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: right, bottom left;
     text-align: center;
+    font-family: var(--Primary-font);
+
 }
 
 
@@ -21,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-block-end: 30px;
+
 }
 
 .basic, .master {
@@ -78,4 +82,19 @@ body {
     padding: 10px 0;
     text-decoration: none;
 
+}
+
+.monthly-billing {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+}
+
+.yearly-billing {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
+    display: none;
 }
