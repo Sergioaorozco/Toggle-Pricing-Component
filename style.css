@@ -58,10 +58,14 @@ body {
     padding-block-end: 3%;
     padding-block-start: 1%;
     padding-inline: 10px;
-    height: 380px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.professional .monthly-billing {
+    font-size: 70px;
 }
 
 .professional-content {
@@ -104,11 +108,10 @@ body {
     padding: 10px 0;
     text-decoration: none;
     color: var(--DarkGrayishBlue);
-
 }
 
 .monthly-billing {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 3rem;
     margin-block-start: 20px;
     margin-block-end: 20px;
