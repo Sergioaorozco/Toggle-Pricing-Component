@@ -19,3 +19,16 @@ function ChangeTime() {
     }
   }
 }
+
+// (function () {
+//   let togglecurrency = document.querySelector("#billing");
+//   let month = document.querySelectorAll(".montly-billing");
+
+//   function ChangeTime() {
+//     if (!togglecurrency.checked) return;
+//     month.forEach((item) => {
+//       let Yearly = item * 10;
+//       month.innerHtml = yearly;
+//     });
+//   }
+// })();
