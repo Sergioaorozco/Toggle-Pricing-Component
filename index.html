@@ -11,64 +11,69 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Toggle Pricing Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍-->
 </head>
 
 <body>
-  <h2>Our Pricing</h2>
-  <div class="toggle-period">
-    <p class="period">Monthly</p>
-    <input class="toggle" name="switch" id="billing" type="checkbox" onclick="ChangeTime()">
-    <label for="billing" class="switchlabel">
-    </label>
-    <p class="period">Anually</p>
-  </div>
-  <section class="price">
-    <div class="basic">
-      <p>Basic</p>
-      <p class="monthly-billing">&dollar;19.99</p>
-      <p class="yearly-billing">&dollar;199.99</p>
-      <hr class="basic-hr">
-      <p>500 GB Storage</p>
-      <hr class="basic-hr">
-      <p>2 Users Allowed</p>
-      <hr class="basic-hr">
-      <p>Send up to 3 GB</p>
-      <a href="#" class="btn-primary">Learn More</a>
+  <!-- Wrapper -->
+  <div class="wrapper">
+    <h1>Our Pricing</h1>
+    <div class="toggle-period">
+      <p class="period">Monthly</p>
+      <input class="toggle" name="switch" id="billing" type="checkbox" onclick="ChangeTime()">
+      <label for="billing" class="switchlabel">
+      </label>
+      <p class="period">Anually</p>
     </div>
-    <div class="professional">
-      <div class="professional-content">
-        <p>Professional</p>
-        <p class="monthly-billing">&dollar;24.99</p>
-        <p class="yearly-billing">&dollar;249.99</p>
-        <hr class="basic-hr">
-        <p>1 TB Storage</p>
-        <hr class="basic-hr">
-        <p>5 Users Allowed</p>
-        <hr class="basic-hr">
-        <p>Send up to 10 GB</p>
-        <a href="#" class="btn-secondary">Learn More</a> 
+    <section class="price">
+      <div class="basic">
+        <div class="basic-content">
+          <p>Basic</p>
+          <p class="monthly-billing">&dollar;19.99</p>
+          <p class="yearly-billing">&dollar;199.99</p>
+          <hr class="basic-hr">
+          <p>500 GB Storage</p>
+          <hr class="basic-hr">
+          <p>2 Users Allowed</p>
+          <hr class="basic-hr">
+          <p>Send up to 3 GB</p>
+          <a href="#" class="btn-primary">Learn More</a>
+        </div>
       </div>
+      <div class="professional">
+        <div class="professional-content">
+          <p>Professional</p>
+          <p class="monthly-billing">&dollar;24.99</p>
+          <p class="yearly-billing">&dollar;249.99</p>
+          <hr class="basic-hr">
+          <p>1 TB Storage</p>
+          <hr class="basic-hr">
+          <p>5 Users Allowed</p>
+          <hr class="basic-hr">
+          <p>Send up to 10 GB</p>
+          <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="master">
+        <div class="master-content">
+          <p>Master</p>
+          <p class="monthly-billing">&dollar;39.99</p>
+          <p class="yearly-billing">&dollar;399.99</p>
+          <hr class="basic-hr">
+          <P>2 TB Storage</P>
+          <hr class="basic-hr">
+          <p>10 Users Allowed</p>
+          <hr class="basic-hr">
+          <p>Send up to 20 GB</p>
+          <a href="#" class="btn-primary">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Sergioaorozco">sergioaorozco</a>.
     </div>
-    <div class="master">
-      <p>Master</p>
-      <p class="monthly-billing">&dollar;39.99</p>
-      <p class="yearly-billing">&dollar;399.99</p>
-      <hr class="basic-hr">
-      <P>2 TB Storage</P>
-      <hr class="basic-hr">
-      <p>10 Users Allowed</p>
-      <hr class="basic-hr">
-      <p>Send up to 20 GB</p>
-      <a href="#" class="btn-primary">Learn More</a>
-    </div>
-  </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Sergioaorozco">sergioaorozco</a>.
   </div>
+  <script type="text/javascript" src="index.js"></script>
 </body>
-<script type="text/javascript" src="index.js"></script>
 
 </html>
